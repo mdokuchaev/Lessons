@@ -20,13 +20,13 @@ public class Task2 {
         try {
             int number = Math.abs(Integer.parseInt(s));
             if ((number >= 100) && (number <= 999)) {
-                int sumdigits = 0;
+                int sumDigits = 0;
                 do {
-                    sumdigits += number % 10;
+                    sumDigits += number % 10;
                     number /= 10;
                 } while (number > 0);
 
-                System.out.println("Сумма цифр этого трехзначного числа: " + sumdigits);
+                System.out.println("Сумма цифр этого трехзначного числа: " + sumDigits);
             } else {
                 System.out.println("Введенное число не является трехзначным");
             }
